@@ -63,13 +63,6 @@ body {
     background-color: #E8D9BF;
 }
 
-.main-message,
-#ABOUT,
-#MENU,
-#EVENT {
-    padding: 0 10px 0 10px;
-}
-
 /* ヘッダー
 ---------------------------------*/
 
@@ -151,18 +144,17 @@ body {
     max-width: 100%;
     width: 1000px;
     margin: 0 auto;
-    padding: 0 10px 0 10px;
     display: flex;
 }
 
 #ABOUT article,
 #ABOUT aside {
+    max-width: 100%;
     width: 50%;
 }
 
 #ABOUT aside {
-    max-width: 100%;
-    padding-left: 85px;
+    padding: 0 10px 0 85px;
     box-sizing: border-box;
 }
 
