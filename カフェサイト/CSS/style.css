@@ -55,6 +55,10 @@ img {
 
 /* ここからCSS */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #E8D9BF;
 }
@@ -146,11 +150,11 @@ body {
 #ABOUT article,
 #ABOUT aside {
     width: 50%;
-    height: 56%;
 }
 
 #ABOUT aside {
     padding-left: 85px;
+    box-sizing: border-box;
 }
 
 #ABOUT article img {
