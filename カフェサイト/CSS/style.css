@@ -63,6 +63,13 @@ body {
     background-color: #E8D9BF;
 }
 
+.main-message,
+#ABOUT,
+#MENU,
+#EVENT {
+    padding: 0 10px 0 10px;
+}
+
 /* ヘッダー
 ---------------------------------*/
 
@@ -144,6 +151,7 @@ body {
     max-width: 100%;
     width: 1000px;
     margin: 0 auto;
+    padding: 0 10px 0 10px;
     display: flex;
 }
 
@@ -153,6 +161,7 @@ body {
 }
 
 #ABOUT aside {
+    max-width: 100%;
     padding-left: 85px;
     box-sizing: border-box;
 }
@@ -163,12 +172,7 @@ body {
 
 #ABOUT aside img {
     width: 54.4%;
-    height: 15.4%;
     padding-bottom: 57px;
-}
-
-aside {
-    padding-left: 85px;
 }
 
 aside > h1 {
@@ -186,6 +190,7 @@ aside > h2 {
 ---------------------------------*/
 
 #MENU {
+    max-width: 100%;
     width: 1000px;
     margin: 0 auto;
     text-align: center;
@@ -193,7 +198,6 @@ aside > h2 {
 
 .MENU-logo {
     width: 15.1%;
-    height: 7.8%;
     padding: 110px 0 50px 0;
 }
 
@@ -232,29 +236,26 @@ aside > h2 {
     text-align: center;
 }
 
-.GALLERY-logo {
-    width: 12.76%;
-    height: 78px;
-    padding-top: 110px;
+#GALLERY > img {
+    padding-top: 100px;
+    width: 12.5%;
 }
 
 .GALLERY-wrap {
-    display: flex;
-    justify-content: space-between;
-}
-
-.GALLERY-wrap img {
-    max-width: 100%;
-    width: 38.4%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 /* EVENT
 ---------------------------------*/
 
 #EVENT {
+    max-width: 100%;
+    width: 1000px;
     font-size: 23px;
     padding-bottom: 80px;
     text-align: center;
+    margin: 0 auto;
 }
 
 #EVENT img {
@@ -264,7 +265,7 @@ aside > h2 {
 }
 
 #EVENT ul {
-    max-width: 1000px;
+    max-width: 100%;
     width: 996px;
     height: 200px;
     background-color: #fff;
@@ -307,13 +308,13 @@ aside > h2 {
 ---------------------------------*/
 
 #footer {
+    max-width: 100%;
     background-color: #fff;
     height: 394px;
 }
 
 #footer .logo {
     width: 226.7px;
-    height: 50px;
 }
 
 .addres {
@@ -340,4 +341,11 @@ aside > h2 {
     font-size: 16px;
     padding-top: 82px;
     text-align: center;
+}
+
+.top-botton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 12.5%;
 }
