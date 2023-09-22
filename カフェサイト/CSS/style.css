@@ -1,0 +1,339 @@
+@charset "UTF-8";
+
+/* リセット */
+html,
+body,
+header,
+footer,
+main,
+section,
+h1,
+h2,
+h3,
+ul,
+li,
+p,
+dl,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    color: #4f260b;
+    font-family: "A1 Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+        "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
+        "ＭＳ 明朝", serif;
+    font-feature-settings: "palt";
+}
+
+body {
+    background-color: #aaa;
+}
+
+a {
+    /*下線を消す*/
+    text-decoration: none;
+    /*色を消す*/
+    color: inherit;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+ul {
+    /*左の「・」を消す*/
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+    border: none;
+}
+
+/* ここからCSS */
+
+body {
+    background-color: #E8D9BF;
+}
+
+/* ヘッダー
+---------------------------------*/
+
+.header {
+    position: relative;
+}
+
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 6.53% 0 2.51%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 226.7px;
+}
+
+.pc-menu ul {
+    display: flex;
+}
+
+.pc-menu ul li {
+    width: 105px;
+    text-align: center;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+        "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 54px;
+}
+
+.pc-menu ul li:last-child {
+    margin-right: 0;
+}
+
+.pc-menu li a {
+    color: #fff;
+}
+
+.slider img {
+    width: 100%;
+    padding-bottom: 104px;    
+}
+
+/* メインコンテンツ
+---------------------------------*/
+
+.main-message {
+    text-align: center;
+}
+
+.mm-1 {
+    font-size: 30px;
+    padding-bottom: 50px;
+}
+
+.mm-2 {
+    font-size: 82px;
+    padding-bottom: 50px;
+    line-height: 1.17;
+}
+
+.mm-3 {
+    font-size: 23px;
+    padding-bottom: 102px;
+    line-height: 1.65;
+}
+
+/* ABOUT
+---------------------------------*/
+
+#ABOUT {
+    max-width: 100%;
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+}
+
+#ABOUT article,
+#ABOUT aside {
+    width: 50%;
+    height: 56%;
+}
+
+#ABOUT aside {
+    padding-left: 85px;
+}
+
+#ABOUT article img {
+    border-bottom-right-radius: 82px;
+}
+
+#ABOUT aside img {
+    width: 54.4%;
+    height: 15.4%;
+    padding-bottom: 57px;
+}
+
+aside {
+    padding-left: 85px;
+}
+
+aside > h1 {
+    font-size: 44px;
+    padding-bottom: 40px;
+    line-height: 1.39;
+}
+
+aside > h2 {
+    font-size: 16px;
+    line-height: 1.63;
+}
+
+/* MENU
+---------------------------------*/
+
+#MENU {
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.MENU-logo {
+    width: 15.1%;
+    height: 7.8%;
+    padding: 110px 0 50px 0;
+}
+
+.MENU-wrap {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 50px;
+    margin: 0 auto;
+}
+
+.MENU img {
+    width: 100%;
+    margin: -8px;
+    border-top-right-radius: 48px;
+}
+
+.MENU h2 {
+    color: #D30202;
+    font-size: 38px;
+    position: relative;
+    right: 90px;
+    bottom: 2px;
+}
+
+.MENU p {
+    font-size: 16px;
+    text-align: left;
+    padding-top: 25px;
+}
+
+/* GALLERY
+---------------------------------*/
+
+#GALLERY {
+    max-width: 100%;
+    text-align: center;
+}
+
+.GALLERY-logo {
+    width: 12.76%;
+    height: 78px;
+    padding-top: 110px;
+}
+
+.GALLERY-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.GALLERY-wrap img {
+    max-width: 100%;
+    width: 38.4%;
+}
+
+/* EVENT
+---------------------------------*/
+
+#EVENT {
+    font-size: 23px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+#EVENT img {
+    width: 173px;
+    height: 78px;
+    padding: 72px 0 40px 0;
+}
+
+#EVENT ul {
+    max-width: 1000px;
+    width: 996px;
+    height: 200px;
+    background-color: #fff;
+    border: solid 3px #4F260B;
+    margin: 0 auto;
+}
+
+#EVENT li {
+    padding-top: 30px;
+    display: flex;
+}
+
+#EVENT li:first-child {
+    padding-top: 40px;
+}
+
+#EVENT time {
+    margin: 0 60px 0 163px;
+}
+
+/* ACCESS
+---------------------------------*/
+
+#ACCESS {
+    text-align: center;
+    margin: 0 auto;
+}
+
+#ACCESS img {
+    width: 213px;
+    height: 78px;
+    padding-bottom: 53px;
+}
+
+#ACCESS iframe {
+    width: 100%;
+}
+
+/* footer
+---------------------------------*/
+
+#footer {
+    background-color: #fff;
+    height: 394px;
+}
+
+#footer .logo {
+    width: 226.7px;
+    height: 50px;
+}
+
+.addres {
+    display: flex;
+    padding-left: 450px;
+}
+
+#footer h2 {
+    text-align: left;
+    margin-left: 50px;
+}
+
+.footer-wrap {
+    padding-top: 76px;
+}
+
+.addres p {
+    font-size: 20px;
+    padding-left: 70px;
+    line-height: 1.95;
+}
+
+.color-copy {
+    font-size: 16px;
+    padding-top: 82px;
+    text-align: center;
+}
