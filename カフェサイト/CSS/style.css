@@ -118,6 +118,7 @@ body {
 
 .main-message {
     text-align: center;
+    padding: 0 10px;
 }
 
 .mm-1 {
@@ -144,39 +145,45 @@ body {
     max-width: 100%;
     width: 1000px;
     margin: 0 auto;
-    display: flex;
 }
 
-#ABOUT article,
-#ABOUT aside {
+.ABOUT-wrap {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.about-coffee {
+    border-bottom-right-radius: 82px;
+}
+
+.about-left,
+.about-right {
     max-width: 100%;
     width: 50%;
 }
 
-#ABOUT aside {
-    padding: 0 10px 0 85px;
-    box-sizing: border-box;
-}
-
-#ABOUT article img {
-    padding-left: 10px;
-    border-bottom-right-radius: 82px;
-}
-
-#ABOUT aside img {
-    width: 54.4%;
+.about-logo {
+    width: 272.3px;
+    height: 77.3px;
     padding-bottom: 57px;
 }
 
-aside > h1 {
+.about-right {
+    padding: 0 10px 0 80px;
+    box-sizing: border-box;
+}
+
+.about-right > h1 {
     font-size: 44px;
     padding-bottom: 40px;
     line-height: 1.39;
 }
 
-aside > h2 {
+.about-right > h2 {
     font-size: 16px;
     line-height: 1.63;
+    font-weight: normal;
 }
 
 /* MENU
@@ -186,36 +193,39 @@ aside > h2 {
     max-width: 100%;
     width: 1000px;
     margin: 0 auto;
+}
+
+#MENU > h2 {
     text-align: center;
 }
 
 .MENU-logo {
-    width: 15.1%;
+    width: 151.3px;
     padding: 110px 0 50px 0;
 }
 
 .MENU-wrap {
     display: grid;
     grid-template-columns: 30% 30% 30%;
-    gap: 50px;
+    gap: 5%;
     margin: 0 auto;
+    padding: 0 10px;
 }
 
 .MENU img {
-    width: 100%;
-    margin: -8px;
+    width: 300px;
+    margin-bottom: -8px;
     border-top-right-radius: 48px;
 }
 
-.MENU h2 {
+.MENU h3 {
     color: #D30202;
     font-size: 38px;
-    position: relative;
-    right: 90px;
-    bottom: 2px;
+    margin-left: 15px;
 }
 
 .MENU p {
+    line-height: 1.47;
     font-size: 16px;
     text-align: left;
     padding-top: 25px;
@@ -229,9 +239,10 @@ aside > h2 {
     text-align: center;
 }
 
-#GALLERY > img {
+.GALLERY-logo {
     padding-top: 100px;
-    width: 12.5%;
+    width: 245px;
+    height: 78px;
 }
 
 .GALLERY-wrap {
@@ -259,11 +270,11 @@ aside > h2 {
 
 #EVENT ul {
     max-width: 100%;
-    width: 996px;
-    height: 200px;
+    width: 1000px;
     background-color: #fff;
     border: solid 3px #4F260B;
     margin: 0 auto;
+    padding-bottom: 48px;
 }
 
 #EVENT li {
@@ -312,7 +323,7 @@ iframe {
     width: 226.7px;
 }
 
-.addres {
+.address {
     max-width: 100%;
     width: 1000px;
     display: flex;
@@ -328,7 +339,7 @@ iframe {
     padding-top: 76px;
 }
 
-.addres p {
+.address p {
     font-size: 20px;
     padding-left: 65px;
     line-height: 1.95;
@@ -344,5 +355,5 @@ iframe {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    width: 12.5%;
+    width: 125px;
 }
