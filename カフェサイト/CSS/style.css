@@ -165,7 +165,6 @@ body {
 
 .about-logo {
     width: 272.3px;
-    height: 77.3px;
     padding-bottom: 57px;
 }
 
@@ -174,13 +173,14 @@ body {
     box-sizing: border-box;
 }
 
-.about-right > h1 {
+.about-right > h2 {
     font-size: 44px;
     padding-bottom: 40px;
     line-height: 1.39;
+    font-weight: bold;
 }
 
-.about-right > h2 {
+.about-right > p {
     font-size: 16px;
     line-height: 1.63;
     font-weight: normal;
@@ -213,7 +213,6 @@ body {
 }
 
 .MENU img {
-    width: 300px;
     margin-bottom: -8px;
     border-top-right-radius: 48px;
 }
@@ -275,6 +274,7 @@ body {
     border: solid 3px #4F260B;
     margin: 0 auto;
     padding-bottom: 48px;
+    box-sizing: border-box;
 }
 
 #EVENT li {
@@ -282,11 +282,15 @@ body {
     display: flex;
 }
 
+#EVENT li > a {
+    border-bottom: 1px solid black;
+}
+
 #EVENT li:first-child {
     padding-top: 40px;
 }
 
-#EVENT time {
+#EVENT p {
     margin: 0 60px 0 163px;
 }
 
@@ -327,7 +331,8 @@ iframe {
     max-width: 100%;
     width: 1000px;
     display: flex;
-    justify-content: center;
+    text-align: left;
+    margin: 0 auto;
 }
 
 #footer h2 {
