@@ -55,26 +55,30 @@
         <div class="main-message-wrap">
             <p class="mm-1">Have a happy day From a cup of coffee.</p>
             <p class="mm-2">ハッピーに溢れる1日を<br>1杯のコーヒーから。</p>
-            <p class="mm-3">毎日を丁寧に大切に過ごしたい。だからこそ一杯一杯丁寧にコーヒーを入れ<br>
-            足を運んでくれるお客さんには落ち着く空間とこだわりのコーヒーを提供したい。
+            <p class="mm-3">毎日を丁寧に大切に過ごしたい。<br class="sp-br">だからこそ一杯一杯丁寧にコーヒーを入れ<br>足を運んでくれるお客さんには落ち着く空間と<br class="sp-br">こだわりのコーヒーを提供したい。
         </div><!-- .main-message-wrap -->
     </section><!-- .main-massage -->
 
     <section id="ABOUT">
         <div class="ABOUT-wrap">
             <div class="about-left">
-                <img src="images/pc_about-100.jpg" alt="コーヒーの写真" class="about-coffee">
+                <picture>
+                    <source srcset="images/about_us@2x-100.jpg" media="(max-width: 767px)">
+                    <img src="images/pc_about-100.jpg" alt="コーヒーの写真" class="about-coffee">
+                </picture>
             </div>
 
             <div class="about-right">
-                <p>
-                    <picture>
-                        <source src="images/about_us@2x-100.jpg" media="(max-width: 767px)">
+                <div class="about-right1">
+                    <p>
                         <img src="images/about_us@2x.png" alt="ABOUT US" class="about-logo">
-                    </picture>
-                </p>
+                    </p>
+                </div>
+
+                <div class="about-right2">
                 <h2>私たちが提供する<br>こだわりのコーヒー</h2>
                 <p>サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。</p>
+                </div>
             </div>
         </div><!-- .ABOUT-wrap -->
     </section><!-- #ABOUT -->
@@ -127,7 +131,7 @@
 
     <section id="EVENT">
         <h2>
-            <img src="images/event@2x.png" alt="イベント">
+            <img src="images/event@2x.png" alt="イベント" class="event-logo">
         </h2>
 
         <div>
@@ -152,7 +156,7 @@
 
     <section id="ACCESS">
         <h2>
-            <img src="images/access@2x.png" alt="アクセス">
+            <img src="images/access@2x.png" alt="アクセス" class="access-logo">
         </h2> 
 
         <div class="map">
@@ -163,8 +167,8 @@
     <section id="footer">
         <footer class="footer-wrap">
             <div class="address">
-                <h1 class="logo">
-                    <img src="images/design_cafe_logo_footer@2x.png" alt="デザインカフェ">
+                <h1>
+                    <img src="images/design_cafe_logo_footer@2x.png" alt="デザインカフェ" class="footer-logo">
                 </h1><!-- .logo -->
 
                 <div>

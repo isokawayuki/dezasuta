@@ -173,14 +173,14 @@ body {
     box-sizing: border-box;
 }
 
-.about-right > h2 {
+.about-right2 > h2 {
     font-size: 44px;
     padding-bottom: 40px;
     line-height: 1.39;
     font-weight: bold;
 }
 
-.about-right > p {
+.about-right2 > p {
     font-size: 16px;
     line-height: 1.63;
     font-weight: normal;
@@ -261,7 +261,7 @@ body {
     padding: 0 10px 80px 10px;
 }
 
-#EVENT img {
+.event-logo {
     width: 173px;
     height: 78px;
     padding: 72px 0 40px 0;
@@ -275,6 +275,7 @@ body {
     margin: 0 auto;
     padding-bottom: 48px;
     box-sizing: border-box;
+    display: inline-block;
 }
 
 #EVENT li {
@@ -303,7 +304,7 @@ body {
     text-align: center;
 }
 
-#ACCESS img {
+.access-logo {
     width: 213px;
     height: 78px;
     padding-bottom: 53px;
@@ -323,7 +324,7 @@ iframe {
     box-sizing: border-box;
 }
 
-#footer .logo {
+.footer-logo {
     width: 226.7px;
 }
 
@@ -448,7 +449,7 @@ iframe {
     }
     /* 可変文字
     ----------------- */
-    
+
     /* .main-message */
     .mm-1 {
         font-size: 2.727vw;
@@ -467,14 +468,181 @@ iframe {
     .about-right > p {
         font-size: 1.454vw;
     }
+
+    /* #EVENT */
+    #EVENT ul > li {
+        font-size: 2.090vw;
+    }
 }
-
-
-@media screen and (max-width:375px) {
-    body {
-        padding-right: 0px;
+@media screen and (max-width:767px) {
+    /* .slider */
+    .slider img {
+        padding-bottom: 20px;
     }
 
+    /* .main-message */
+    .main-message {
+        padding: 0;
+    }
+    .mm-1,
+    .mm-2 {
+        padding-bottom: 30px;
+    }
+    .mm-2 {
+        line-height: 1.15;
+    }
+    .mm-3 {
+        line-height: 1.87;
+    }
+    .mm-3 span {
+        display: block;
+    }
+
+    /* #ABOUT
+    -----------------*/
+    .ABOUT-wrap {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+    .about-left,
+    .about-coffee {
+        width: 100%;
+    }
+    .about-right {
+        width: 100%;
+        text-align: center;
+        padding: 0 21px 0 21px;
+    }
+    .about-right2 > h2 {
+        font-size: 9.6vw;
+        text-align: left;
+    }
+    .about-logo {
+        padding-top: 0;
+        width: 160px;
+    }
+    .about-coffee {
+        border-bottom-right-radius: 0;
+        height: 65.3%;
+    }
+    /* .ABOUT-wrap,
+    .about-right,
+    .about-left {
+        display: flex;
+        flex-direction: column-reverse
+    }
+    .about-right1  img {
+        order: 1;
+    }
+    .about-left {
+        order: 2;
+    } */
+
+
+    /* #MENU */
+    .MENU-logo {
+        width: 87.8px;
+        padding: 56px 0 20px 0;
+    }
+    .MENU-wrap {
+        object-fit: cover;
+        display: block;
+        text-align: center;
+        padding: 0 32px 0 32px;
+    }
+    .MENU img {
+        width: 100%;
+    }
+    .MENU h3 {
+        text-align: left;
+        padding-bottom: 32px;
+    }
+    .MENU p {
+        padding: 0;
+        line-height: 1.58;
+        padding-bottom: 60px;
+    }
+
+    /* #GALLERY */
+    .GALLERY-logo {
+        width: 142.2px;
+        height: 45px;
+        padding: 0;
+    }
+
+    /* #EVENT */
+    #EVENT {
+        padding-bottom: 35px;
+    }
+    .event-logo {
+        width: 100px;
+        height: 45px;
+        padding: 30px 0 20px 0;
+    }
+    #EVENT p,
+    #EVENT a {
+        max-width: 100%;
+        margin: 0;
+        font-size: 16px;
+    }
+    #EVENT li {
+        display: block;
+        text-align: left;
+        padding: 30px 30px 0 30px;
+        margin: 0 auto;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    /* #ACCESS */
+    .access-logo {
+        width: 124px;
+        height: 45px;
+        padding-bottom: 10px;
+    }
+    #ACCESS iframe {
+        width: 100%;
+        height: 191px;
+    }
+
+    /* #footer */
+    .address {
+        display: block;
+    }
+    .footer-logo {
+        width: 226.7px;
+        height: 50.2px;
+        padding:48px 0 32px 0;
+    }
+    .footer-wrap {
+        padding: 0;
+    }
+    .footer-wrap div p {
+        font-size: 18px;
+        line-height: 1.72;
+        padding: 0;
+    }
+    .color-copy {
+        font-size: 16px;
+        padding: 50px 0 30px 0;
+    }
+    .top-botton {
+        position: fixed;
+        bottom: 223px;
+        right: 12px;
+        width: 100px;
+    }
+}
+
+@media screen and (min-width:376px) {
+    .sp-br {
+        display: none;
+    }
+}
+
+@media screen and (max-width:375px) {
     .mm-1 {
         font-size: 4.53vw;
     }
@@ -483,6 +651,14 @@ iframe {
     }
     .mm-3 {
         font-size: 4.26vw;
+    }
+
+    .about-right h2 {
+        padding-bottom: 36px;
+    }
+    .about-right p {
+        font-size: 16px;
+        line-height: 1.75;
     }
 
 }
