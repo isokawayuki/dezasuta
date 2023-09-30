@@ -629,7 +629,7 @@ iframe {
         padding: 50px 0 30px 0;
     }
     .top-botton {
-        position: fixed;
+        position: none;
         bottom: 223px;
         right: 12px;
         width: 100px;
