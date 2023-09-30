@@ -137,6 +137,9 @@ body {
     padding-bottom: 102px;
     line-height: 1.65;
 }
+.sp-br {
+    display: none;
+}
 
 /* ABOUT
 ---------------------------------*/
@@ -372,11 +375,23 @@ iframe {
     display: none;
 }
 
+.sp-about-logo {
+    display: none;
+}
+
 @media screen and (max-width:1100px) {
     .pc-menu {
         display: none;
     }
-    
+    .sp-br {
+        display: block;
+    }
+
+    .header-wrap .logo {
+        width: 187px;
+        height: 41px;
+    }
+
     .humburger {
         display: block;
         position: absolute;
@@ -501,8 +516,7 @@ iframe {
     /* #ABOUT
     -----------------*/
     .ABOUT-wrap {
-        display: flex;
-        flex-direction: column-reverse;
+        display: block;
         padding: 0;
     }
     .about-left,
@@ -511,21 +525,32 @@ iframe {
     }
     .about-right {
         width: 100%;
-        text-align: center;
+        text-align: left;
         padding: 0 21px 0 21px;
     }
     .about-right2 > h2 {
         font-size: 9.6vw;
         text-align: left;
-    }
-    .about-logo {
-        padding-top: 0;
-        width: 160px;
+        padding-bottom: 30px;
     }
     .about-coffee {
         border-bottom-right-radius: 0;
         height: 65.3%;
+        padding-bottom: 40px;
+        order: 3;
     }
+    .about-logo {
+        display: none;
+    }
+    .sp-about-logo  {
+        display: block;
+        order: 1;
+        width: 160px;
+        height: 45px;
+        margin: 0 auto;
+        padding-bottom: 20px;
+    }
+
     /* .ABOUT-wrap,
     .about-right,
     .about-left {
@@ -591,9 +616,13 @@ iframe {
         text-align: left;
         padding: 30px 30px 0 30px;
         margin: 0 auto;
+
+    }
+    #EVENT li > a {
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
+        display: inline-block;
     }
 
     /* #ACCESS */
@@ -628,22 +657,39 @@ iframe {
         font-size: 16px;
         padding: 50px 0 30px 0;
     }
-    .top-botton {
-        position: none;
+    /* .top-botton {
         bottom: 223px;
         right: 12px;
         width: 100px;
+    } */
+    .mm-1 {
+        font-size: 4.53vw;
+    }
+    .mm-2 {
+        font-size: 10.13vw;
+    }
+    .mm-3 {
+        font-size: 4.26vw;
+        padding-bottom: 70px;
+    }
+
+    .about-right h2 {
+        padding-bottom: 36px;
+    }
+    .about-right p {
+        font-size: 16px;
+        line-height: 1.75;
     }
 }
 
-@media screen and (min-width:376px) {
+/* @media screen and (min-width:375px) {
     .sp-br {
         display: none;
     }
-}
+} */
 
 @media screen and (max-width:375px) {
-    .mm-1 {
+    /* .mm-1 {
         font-size: 4.53vw;
     }
     .mm-2 {
@@ -659,6 +705,6 @@ iframe {
     .about-right p {
         font-size: 16px;
         line-height: 1.75;
-    }
+    } */
 
 }
