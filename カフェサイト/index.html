@@ -11,7 +11,7 @@
     <!-- slickのCSS-->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
-    <link rel="stylesheet" href="css/lightbox.min.css">
+    <link rel="stylesheet" href="CSS/lightbox.min.css">
 
     <link rel="stylesheet" href="CSS/style.css">
 
@@ -143,8 +143,8 @@
         </h2>
         
         <div class="GALLERY-wrap GALLERY-slider">
-            <span><a href="images/pc_gallary_01-100.jpg" data-lightbox="img01" data-title="コーヒー">
-                <img src="images/pc_gallary_01-100.jpg" alt="コーヒー"></a></span>
+            <a href="images/pc_gallary_01-100.jpg" data-lightbox="img01" data-title="コーヒー">
+                <img src="images/pc_gallary_01-100.jpg" alt="コーヒー"></a>
 
             <a href="images/pc_gallary_02-100.jpg" data-lightbox="img01" data-title="店内の内装">
                 <img src="images/pc_gallary_02-100.jpg" alt="店内の内装"></a>
@@ -227,9 +227,13 @@
         $(function(){
 
             // humburger
-            $(".humburger").on("click", function(){
-                $(".sp-menu").fadeToggle(100);
-                $(".humburger").toggleClass("open");
+            // $(".humburger").on("click", function(){
+            //     $(".sp-menu").fadeToggle(100);
+            //     $(".humburger").toggleClass("open");
+            // });
+            $('.humburger,.sp-menu a').on('click', function () {
+                $('.sp-menu').fadeToggle(100);
+                $('.humburger').toggleClass('open')
             });
 
             // slider
